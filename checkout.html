@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My watch store</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="practice.css">
+  <style>
+  </style>
+</head>
+    <body>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-sm bg-light sticky-top">
+            <a href="practice.html" class="navbar-brand">
+                <h4 class="navbar-brand-item"><strong>My Watch<br>Store</strong></h4>
+                <i class="far fa-clock fa-lg navbar-brand-item"></i>
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="practice.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Account</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container mb-40 mt-40">
+            <div class="row">
+                <div class="col">
+                    <h4 class="mb-3">Billing address</h4>
+                    <form class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">First name</label>
+                                <input type="text" class="form-control" id="firstName" value="" required>
+                                <div class="invalid-feedback">
+                                    required.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">Last name</label>
+                                <input type="text" class="form-control" id="lastName" value="" required>
+                                <div class="invalid-feedback">
+                                Valid last name is required.
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="phone">Mobile Number</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text">+91</span>
+                                </div>
+                                <input type="text" class="form-control" id="phone" placeholder="Mobile number" required>
+                                <div class="invalid-feedback" style="width: 100%;">
+                                    required.
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="mb-3">
+                            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="email">
+                            <div class="invalid-feedback">
+                                not valid
+                            </div>
+                        </div>
+        
+                        <div class="mb-3">
+                            <label for="address1">Address line 1</label>
+                            <input type="text" class="form-control" id="address1" required>
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
+                            </div>
+                        </div>
+        
+                        <div class="mb-3">
+                            <label for="address2">Address line 2</label>
+                            <input type="text" class="form-control" id="address2">
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-md-5 mb-3">
+                                <label for="state">State</label>
+                                <select class="custom-select d-block w-100" id="state" required>
+                                    <option value="">Choose...</option>
+                                    <option value="">Chennai</option>
+                                    <option value="">Bangalore</option>
+                                    <option value="">Mumbai</option>
+                                    <option value="">Calcutta</option>
+                                    <option value="">Delhi</option>
+                                    <option value="">Kerala</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="country">city</label>
+                                <select class="custom-select d-block w-100" id="country" required>
+                                    <option value="">Choose...</option>
+                                    <option>Palakkad</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid country.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="zip">Zip</label>
+                                <input type="text" class="form-control" id="zip" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    required.
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                    
+                        <h4 class="mb-3">Payment</h4>
+        
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio">
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                                <label class="custom-control-label" for="credit">Credit card</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <label class="custom-control-label" for="debit">Debit card</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <label class="custom-control-label" for="paypal">Google pay</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-name">Name on card</label>
+                                <input type="text" class="form-control" id="cc-name" required>
+                                <small class="text-muted">Full name as displayed on card</small>
+                                <div class="invalid-feedback">
+                                    required
+                                </div>
+                            </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-number">card number</label>
+                            <input type="text" class="form-control" id="cc-number" required>
+                            <div class="invalid-feedback">
+                                required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-expiration">Expiration</label>
+                            <input type="text" class="form-control" id="cc-expiration">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-cvv">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Security code required
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="pg-footer bg-secondary">
+            <div class="bg-success">
+                <div class="container">
+                    <div class="row py-4 d-flex align-items-center">
+                        <div class="col md-25 text-center">
+                            <a href="#"><i class="fab fa-facebook text-white mr-4"></i></a>
+                            <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
+                            <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp text-white mr-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </footer>
+    </body>
+</html>
