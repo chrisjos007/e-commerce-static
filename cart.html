@@ -1,205 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>My watch store</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <style>
-  </style>
-</head>
-    <body>
-
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-sm bg-light sticky-top">
-            <a href="index.html" class="navbar-brand">
-                <h4 class="navbar-brand-item"><strong>My Watch<br>Store</strong></h4>
-                <i class="far fa-clock fa-lg navbar-brand-item"></i>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon">
-                    <i class="fas fa-bars"></i>
-                </span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <div class="md-form mt-0">
-                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Account</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
-                    </li>
-                </ul>
+   <head>
+      <title>My watch store</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <style>
+      </style>
+   </head>
+   <body>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-sm bg-light sticky-top">
+         <a href="index.html" class="navbar-brand">
+            <h4 class="navbar-brand-item"><strong>My Watch<br>Store</strong></h4>
+            <i class="far fa-clock fa-lg navbar-brand-item"></i>
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon">
+         <i class="fas fa-bars"></i>
+         </span>
+         </button>
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <div class="md-form mt-0">
+                     <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#" class="nav-link">Account</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#" class="nav-link">contact</a>
+               </li>
+               <li class="nav-item">
+                  <a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!---Cart items -->
+      <div class="container">
+         <div class="row">
+            <div class="col item-list-head">
+               <div class="jumbotron text-center">
+                  <h3>Item cart</h3>
+               </div>
             </div>
-        </nav>
-
-        <!---Cart items -->
-        <div class="container">
-            <div class="row">
-                <div class="col item-list-head">
-                    <div class="jumbotron text-center">
-                        <h3>Item cart</h3>
-                    </div>
-                </div>  
-                <div class="col-12">
-                    <table class="table table-image">
-                        <thead>
-                            <tr>
-                                <th scope="col">Item</th>
-                                <th scope="col">Item desc</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <img src="watch/a1lq.jpg" class="img-fluid img-thumbnail cart-img" alt="Fossil">
-                                </td>
-                                <td>
-                                    <h6>Fossil</h6>
-                                    <p>DECKER - L Women Silver Analogue Watch ES2681</p>
-                                    <small>size: onesize</small>
-                                </td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                          qty
-                                        </button>
-                                        <div class="dropdown-menu">
-                                          <a class="dropdown-item" href="#">1</a>
-                                          <a class="dropdown-item" href="#">2</a>
-                                          <a class="dropdown-item" href="#">3</a>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Rs. 5000</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="watch/analog1-4.webp" class="img-fluid img-thumbnail cart-img" alt="Fossil">
-                                </td>
-                                <td>
-                                    <h6>Emporio Armani</h6>
-                                    <p>TAZIO Men Black Analogue Watch AR5905</p>
-                                    <small>size: onesize</small>
-                                </td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                          qty
-                                        </button>
-                                        <div class="dropdown-menu">
-                                          <a class="dropdown-item" href="#">1</a>
-                                          <a class="dropdown-item" href="#">2</a>
-                                          <a class="dropdown-item" href="#">3</a>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Rs. 2540</td>
-                            </tr>
-                        </tbody>
-                    </table>   
-                </div>
+            <div class="col-12">
+               <table class="table table-image">
+                  <thead>
+                     <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Item desc</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>
+                           <img src="watch/a1lq.jpg" class="img-fluid img-thumbnail cart-img" alt="Fossil">
+                        </td>
+                        <td>
+                           <h6>Fossil</h6>
+                           <p>DECKER - L Women Silver Analogue Watch ES2681</p>
+                           <small>size: onesize</small>
+                        </td>
+                        <td>
+                           <div class="dropdown">
+                              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                              qty
+                              </button>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="#">1</a>
+                                 <a class="dropdown-item" href="#">2</a>
+                                 <a class="dropdown-item" href="#">3</a>
+                              </div>
+                           </div>
+                        </td>
+                        <td>Rs. 5000</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <img src="watch/analog1-4.webp" class="img-fluid img-thumbnail cart-img" alt="Fossil">
+                        </td>
+                        <td>
+                           <h6>Emporio Armani</h6>
+                           <p>TAZIO Men Black Analogue Watch AR5905</p>
+                           <small>size: onesize</small>
+                        </td>
+                        <td>
+                           <div class="dropdown">
+                              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                              qty
+                              </button>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="#">1</a>
+                                 <a class="dropdown-item" href="#">2</a>
+                                 <a class="dropdown-item" href="#">3</a>
+                              </div>
+                           </div>
+                        </td>
+                        <td>Rs. 2540</td>
+                     </tr>
+                  </tbody>
+               </table>
             </div>
-
-
-            <!---Price details-->
-            <div class="row justify-content-center mb-40">
-                <div class="col-sm-12">
-                    <h4 class="text-center">Total Price</h4>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                          <div class="container">
-                              <table class="table table-borderless">
-                                  <thead>
-                                      <tr><th>Price details</th></tr>
-                                  </thead>
-                                  <tbody>
-                                      <tr>
-                                          <td>Total MRP</td>
-                                          <td>Rs 7540</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Discount</td>
-                                        <td>Rs 2000</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Total Amount</strong></td>
-                                        <td>Rs 5540</td>
-                                    </tr>
-                                  </tbody>
-                              </table>
-                          </div>
-                          <a href="checkout.html" class="btn btn-primary w-100">Place order</a>
-                        </div>
-                    </div> 
-                </div>
+         </div>
+         <!---Price details-->
+         <div class="row justify-content-center mb-40">
+            <div class="col-sm-12">
+               <h4 class="text-center">Total Price</h4>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col">
-                    <h6>You may also like</h6><br>
-                </div>
+            <div class="col-sm-4">
+               <div class="card">
+                  <div class="card-body">
+                     <div class="container">
+                        <table class="table table-borderless">
+                           <thead>
+                              <tr>
+                                 <th>Price details</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Total MRP</td>
+                                 <td>Rs 7540</td>
+                              </tr>
+                              <tr>
+                                 <td>Discount</td>
+                                 <td>Rs 2000</td>
+                              </tr>
+                              <tr>
+                                 <td><strong>Total Amount</strong></td>
+                                 <td>Rs 5540</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <a href="checkout.html" class="btn btn-primary w-100">Place order</a>
+                  </div>
+               </div>
             </div>
-            <div class="row mb-40">
-                <div class="col-sm-2">
-                    <img src="watch/Dressberry.webp" alt="" class="img-thumbnail img-prop hoverable">
-                </div>
-                <div class="col-sm-2">
-                    <img src="watch/Fossilstella.webp" alt="" class="img-thumbnail img-prop hoverable">
-                </div>
-                <div class="col-sm-2">
-                    <img src="watch/analog1-1.webp" alt="" class="img-thumbnail img-prop hoverable">
-                </div>
-                <div class="col-sm-2">
-                    <img src="watch/daniel_klein.jpg" alt="" class="img-thumbnail img-prop hoverable">
-                </div>
-                <div class="col-sm-2">
-                    <img src="watch/Mont-vitton.webp" alt="" class="img-thumbnail img-prop hoverable">
-                </div>
-                <div class="col-sm-2">
-                    <img src="watch/emporioarmani.webp" alt="" class="img-thumbnail img-prop hoverable">
-                </div>
+         </div>
+         <hr>
+         <div class="row">
+            <div class="col">
+               <h6>You may also like</h6>
+               <br>
             </div>
-        </div>
-
-
-        <footer class="pg-footer bg-secondary">
-            <div class="bg-success">
-                <div class="container">
-                    <div class="row py-4 d-flex align-items-center">
-                        <div class="col md-25 text-center">
-                            <a href="#"><i class="fab fa-facebook text-white mr-4"></i></a>
-                            <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
-                            <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
-                            <a href="#"><i class="fab fa-whatsapp text-white mr-4"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </footer>
-    </body>
+         </div>
+         <div class="row mb-40">
+            <div class="col-sm-2">
+               <img src="watch/Dressberry.webp" alt="" class="img-thumbnail img-prop hoverable">
+            </div>
+            <div class="col-sm-2">
+               <img src="watch/Fossilstella.webp" alt="" class="img-thumbnail img-prop hoverable">
+            </div>
+            <div class="col-sm-2">
+               <img src="watch/analog1-1.webp" alt="" class="img-thumbnail img-prop hoverable">
+            </div>
+            <div class="col-sm-2">
+               <img src="watch/daniel_klein.jpg" alt="" class="img-thumbnail img-prop hoverable">
+            </div>
+            <div class="col-sm-2">
+               <img src="watch/Mont-vitton.webp" alt="" class="img-thumbnail img-prop hoverable">
+            </div>
+            <div class="col-sm-2">
+               <img src="watch/emporioarmani.webp" alt="" class="img-thumbnail img-prop hoverable">
+            </div>
+         </div>
+      </div>
+      <footer class="pg-footer bg-secondary">
+         <div class="bg-success">
+            <div class="container">
+               <div class="row py-4 d-flex align-items-center">
+                  <div class="col md-25 text-center">
+                     <a href="#"><i class="fab fa-facebook text-white mr-4"></i></a>
+                     <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
+                     <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
+                     <a href="#"><i class="fab fa-whatsapp text-white mr-4"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>

@@ -1,208 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>My watch store</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <style>
-  </style>
-</head>
-    <body>
-
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-sm bg-light sticky-top">
-            <a href="index.html" class="navbar-brand">
-                <h4 class="navbar-brand-item"><strong>My Watch<br>Store</strong></h4>
-                <i class="far fa-clock fa-lg navbar-brand-item"></i>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon">
-                    <i class="fas fa-bars"></i>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <div class="md-form mt-0">
-                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+   <head>
+      <title>My watch store</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <style>
+      </style>
+   </head>
+   <body>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-sm bg-light sticky-top">
+         <a href="index.html" class="navbar-brand">
+            <h4 class="navbar-brand-item"><strong>My Watch<br>Store</strong></h4>
+            <i class="far fa-clock fa-lg navbar-brand-item"></i>
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon">
+         <i class="fas fa-bars"></i>
+         </span>
+         </button>
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <div class="md-form mt-0">
+                     <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#" class="nav-link">Account</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#" class="nav-link">contact</a>
+               </li>
+               <li class="nav-item">
+                  <a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!---Item description--->
+      <div class="container mt-40 mb-40">
+         <div class="row">
+            <div class="col-lg-6">
+               <div class="container">
+                  <div id="watch-sample" class="carousel slide" data-ride="carousel">
+                     <ul class="carousel-indicators">
+                        <li data-target="#watch-sample" data-slide-to="0" class="active"></li>
+                        <li data-target="#watch-sample" data-slide-to="1"></li>
+                        <li data-target="#watch-sample" data-slide-to="2"></li>
+                     </ul>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img src="watch/analog1-1.webp" alt="watch1" class="img-prop img-thumbnail list-img">
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Account</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <!---Item description--->
-        <div class="container mt-40 mb-40">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="container">
-                        <div id="watch-sample" class="carousel slide" data-ride="carousel">
-            
-                            <ul class="carousel-indicators">
-                                <li data-target="#watch-sample" data-slide-to="0" class="active"></li>
-                                <li data-target="#watch-sample" data-slide-to="1"></li>
-                                <li data-target="#watch-sample" data-slide-to="2"></li>
-                            </ul>
-                  
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="watch/analog1-1.webp" alt="watch1" class="img-prop img-thumbnail list-img">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="watch/analog1-2.webp" alt="watch2" class="img-prop img-thumbnail list-img">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="watch/analog1-3.webp" alt="watch3" class="img-prop img-thumbnail list-img">
-                                </div>
-                            </div>
-
-                            <a class="carousel-control-prev" href="#watch-sample" data-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </a>
-                            <a class="carousel-control-next" href="#watch-sample" data-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </a>
+                        <div class="carousel-item">
+                           <img src="watch/analog1-2.webp" alt="watch2" class="img-prop img-thumbnail list-img">
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-5">
-                    <div class="card">
-                        <div class="card-body single-item">
-                            <h4 class="card-title text-center"><strong>Fossil</strong></h4>
-                            <h6>DECKER - L Women Silver Analogue Watch ES2681</h6>
-                            <p class="card-text">
-                                <a href="#">
-                                    <button type="button" class="btn btn-outline-primary">
-                                        4.3 <i class="fas fa-star text-warning"></i> | 300 reviews
-                                    </button>
-                                </a>
-                                <hr>
-                                <h4 class="d-flex">
-                                    <div>
-                                        <b class="mr-sm-2">Rs. 5000</b>
-                                    </div>
-                                    <div>
-                                        <b class="text-success">(35% off)</b>
-                                    </div>
-                                </h4><br>
-                            </p>
-                            <p>
-                                Select size:
-                                <a href="#" class="btn btn-outline-primary">onesize</a>
-                            </p>
-                            <div class="container d-flex justify-content-around mt-40">
-                                <a href="cart.html">
-                                    <button type="button" class="btn btn-primary">Add to cart</button>
-                                </a>
-                                <a href="cart.html">
-                                    <button type="button" class="btn btn-primary">Go to cart</button>
-                                </a>
-                            </div>
-                            <p class="mt-40">
-                                100% Original Products<br>
-                                Free Delivery<br>
-                                COD available<br>
-                                15 days returns<br>
-                            </p>
-                            <hr>
-                            <h5>Product description</h5>
-                            <p>
-                                Display: Analogue<br>
-                                Movement: Quartz<br>
-                                Power source: Battery<br>
-                                Lorem ipsum dolor sit amet consectetur.<br>
-                                Lorem ipsum dolor sit amet.<br>
-                                Strap: metal<br>
-                                Water resistance: 200 m<br>
-                                Warranty: Lorem, ipsum dolor.<br>
-                                Dial width: 35 mm<br>
-                                Strap width: 17 mm<br>
-                            </p>
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td><small class="text-muted">Display</small><p>Analog</p></td>
-                                        <td><small class="text-muted">Power</small><p>Battery</p></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small class="text-muted">water resistant</small><p>200m</p></td>
-                                        <td><small class="text-muted">strap</small><p>chain</p></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small class="text-muted">Display</small><p>Analog</p></td>
-                                        <td><small class="text-muted">Display</small><p>Analog</p></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="carousel-item">
+                           <img src="watch/analog1-3.webp" alt="watch3" class="img-prop img-thumbnail list-img">
                         </div>
-                    </div>
-                </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#watch-sample" data-slide="prev">
+                     <span class="carousel-control-prev-icon"></span>
+                     </a>
+                     <a class="carousel-control-next" href="#watch-sample" data-slide="next">
+                     <span class="carousel-control-next-icon"></span>
+                     </a>
+                  </div>
+               </div>
             </div>
-            <div class="row">
-                <div class="col"><h4>Customer reviews</h4></div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <table class="table">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+               <div class="card">
+                  <div class="card-body single-item">
+                     <h4 class="card-title text-center"><strong>Fossil</strong></h4>
+                     <h6>DECKER - L Women Silver Analogue Watch ES2681</h6>
+                     <p class="card-text">
+                        <a href="#">
+                        <button type="button" class="btn btn-outline-primary">
+                        4.3 <i class="fas fa-star text-warning"></i> | 300 reviews
+                        </button>
+                        </a>
+                     <hr>
+                     <h4 class="d-flex">
+                        <div>
+                           <b class="mr-sm-2">Rs. 5000</b>
+                        </div>
+                        <div>
+                           <b class="text-success">(35% off)</b>
+                        </div>
+                     </h4>
+                     <br>
+                     </p>
+                     <p>
+                        Select size:
+                        <a href="#" class="btn btn-outline-primary">onesize</a>
+                     </p>
+                     <div class="container d-flex justify-content-around mt-40">
+                        <a href="cart.html">
+                        <button type="button" class="btn btn-primary">Add to cart</button>
+                        </a>
+                        <a href="cart.html">
+                        <button type="button" class="btn btn-primary">Go to cart</button>
+                        </a>
+                     </div>
+                     <p class="mt-40">
+                        100% Original Products<br>
+                        Free Delivery<br>
+                        COD available<br>
+                        15 days returns<br>
+                     </p>
+                     <hr>
+                     <h5>Product description</h5>
+                     <p>
+                        Display: Analogue<br>
+                        Movement: Quartz<br>
+                        Power source: Battery<br>
+                        Lorem ipsum dolor sit amet consectetur.<br>
+                        Lorem ipsum dolor sit amet.<br>
+                        Strap: metal<br>
+                        Water resistance: 200 m<br>
+                        Warranty: Lorem, ipsum dolor.<br>
+                        Dial width: 35 mm<br>
+                        Strap width: 17 mm<br>
+                     </p>
+                     <table class="table">
                         <tbody>
-                            <tr>
-                                <td>
-                                    <b>Customer</b>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptate?</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <b>Customer</b>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptate?</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <b>Customer</b>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptate?</p>
-                                </td>
-                            </tr>
+                           <tr>
+                              <td>
+                                 <small class="text-muted">Display</small>
+                                 <p>Analog</p>
+                              </td>
+                              <td>
+                                 <small class="text-muted">Power</small>
+                                 <p>Battery</p>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <small class="text-muted">water resistant</small>
+                                 <p>200m</p>
+                              </td>
+                              <td>
+                                 <small class="text-muted">strap</small>
+                                 <p>chain</p>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <small class="text-muted">Display</small>
+                                 <p>Analog</p>
+                              </td>
+                              <td>
+                                 <small class="text-muted">Display</small>
+                                 <p>Analog</p>
+                              </td>
+                           </tr>
                         </tbody>
-                    </table>
-                </div>
+                     </table>
+                  </div>
+               </div>
             </div>
-        </div>
-        <footer class="pg-footer bg-secondary">
-            <div class="bg-success">
-                <div class="container">
-                    <div class="row py-4 d-flex align-items-center">
-                        <div class="col md-25 text-center">
-                            <a href="#"><i class="fab fa-facebook text-white mr-4"></i></a>
-                            <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
-                            <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
-                            <a href="#"><i class="fab fa-whatsapp text-white mr-4"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </footer>
-    </body>
+         </div>
+         <div class="row">
+            <div class="col">
+               <h4>Customer reviews</h4>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <b>Customer</b>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptate?</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <b>Customer</b>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptate?</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <b>Customer</b>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptate?</p>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+      <footer class="pg-footer bg-secondary">
+         <div class="bg-success">
+            <div class="container">
+               <div class="row py-4 d-flex align-items-center">
+                  <div class="col md-25 text-center">
+                     <a href="#"><i class="fab fa-facebook text-white mr-4"></i></a>
+                     <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
+                     <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
+                     <a href="#"><i class="fab fa-whatsapp text-white mr-4"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>

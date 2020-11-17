@@ -1,235 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>My watch store</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <style>
-  </style>
-</head>
-    <body>
-
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-sm bg-light sticky-top">
-            
-            <a href="index.html" class="navbar-brand">
-                <h4 class="navbar-brand-item"><strong>My Watch<br>Store</strong></h4>
-                <i class="far fa-clock fa-lg navbar-brand-item"></i>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon">
-                    <i class="fas fa-bars"></i>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <div class="md-form mt-0">
-                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Account</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
-                    </li>
-                </ul>
+   <head>
+      <title>My watch store</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <style>
+      </style>
+   </head>
+   <body>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-sm bg-light sticky-top">
+         <a href="index.html" class="navbar-brand">
+            <h4 class="navbar-brand-item"><strong>My Watch<br>Store</strong></h4>
+            <i class="far fa-clock fa-lg navbar-brand-item"></i>
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon">
+         <i class="fas fa-bars"></i>
+         </span>
+         </button>
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <div class="md-form mt-0">
+                     <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#" class="nav-link">Account</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#" class="nav-link">contact</a>
+               </li>
+               <li class="nav-item">
+                  <a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!---Filter panel--->
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-2">
+               <div>
+                  <h5>Filter</h5>
+               </div>
+               <div class="filters mt-5">
+                  <div class="filter-item">
+                     <input type="checkbox" id="defaultCheck" name="male">
+                     <label for="defaultCheck">Male</label>
+                  </div>
+                  <div class="filter-item">
+                     <input type="checkbox" id="defaultCheck" name="female">
+                     <label for="defaultCheck">Female</label>
+                  </div>
+                  <div class="filter-item">
+                     <input type="checkbox" id="defaultCheck" name="unisex">
+                     <label for="defaultCheck">Unisex</label><br>
+                  </div>
+                  <h6 class="mt-3">Categories</h6>
+                  <br>
+                  <div class="filter-item">
+                     <input type="checkbox" id="defaultCheck" name="analog">
+                     <label for="defaultCheck">Analog</label>
+                  </div>
+                  <div class="filter-item">
+                     <input type="checkbox" id="defaultCheck" name="digital">
+                     <label for="defaultCheck">Digital</label>
+                  </div>
+                  <div class="filter-item">
+                     <input type="checkbox" id="defaultCheck" name="chrono">
+                     <label for="defaultCheck">Chrono</label><br>
+                  </div>
+               </div>
             </div>
-        </nav>
-
-        <!---Filter panel--->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div>
-                        <h5>Filter</h5>
-                    </div>
-                    
-                    <div class="filters mt-5">
-                            <div class="filter-item">
-                                <input type="checkbox" id="defaultCheck" name="male">
-                                <label for="defaultCheck">Male</label>
-                            </div>
-                            <div class="filter-item">
-                                <input type="checkbox" id="defaultCheck" name="female">
-                                <label for="defaultCheck">Female</label>
-                            </div>
-                            <div class="filter-item">
-                                <input type="checkbox" id="defaultCheck" name="unisex">
-                                <label for="defaultCheck">Unisex</label><br>
-                            </div>
-                            <h6 class="mt-3">Categories</h6><br>
-                            <div class="filter-item">
-                                <input type="checkbox" id="defaultCheck" name="analog">
-                                <label for="defaultCheck">Analog</label>
-                            </div>
-                            <div class="filter-item">
-                                <input type="checkbox" id="defaultCheck" name="digital">
-                                <label for="defaultCheck">Digital</label>
-                            </div>
-                            <div class="filter-item">
-                                <input type="checkbox" id="defaultCheck" name="chrono">
-                                <label for="defaultCheck">Chrono</label><br>
-                            </div>
-                        
-                    </div>
-                </div>
-
-                <!---Item list--->
-                <div class="col-lg-10">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col item-list-head">
-                                <div class="jumbotron text-center">
-                                    <h3>Analogue watches</h3>
-                                </div>
-                            </div>
+            <!---Item list--->
+            <div class="col-lg-10">
+               <div class="container">
+                  <div class="row">
+                     <div class="col item-list-head">
+                        <div class="jumbotron text-center">
+                           <h3>Analogue watches</h3>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-sm">
-                                <div class="card">
-                                    <a href="item.html">
-                                        <img class="card-img-top img-prop img-thumbnail hoverable" src="watch/daniel_klein.jpg" alt="watchname">
-                                        <div class="card-body">
-                                            <h4 class="card-title text-dark">Daniel Klein</h4>
-                                            <p class="card-text text-dark">Watch desc</p>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col-sm text-center">
-                                                        <a href="item.html" class="btn btn-primary mt-sm-2">Go to item</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm">
-                                <div class="card">
-                                    <a href="item.html">
-                                        <img class="card-img-top img-prop img-thumbnail hoverable" src="watch/Fossilstella.webp" alt="watchname">
-                                        <div class="card-body">
-                                            <h4 class="card-title text-dark">Fossil</h4>
-                                            <p class="card-text text-dark">Watch desc</p>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col-sm text-center">
-                                                        <a href="item.html" class="btn btn-primary mt-sm-2">Go to item</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm">
-                                <div class="card">
-                                    <a href="item.html">
-                                        <img class="card-img-top img-prop img-thumbnail hoverable" src="watch/emporioarmani.webp" alt="watchname">
-                                        <div class="card-body">
-                                            <h4 class="card-title text-dark">Emportio Armani</h4>
-                                            <p class="card-text text-dark">Watch desc</p>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col-sm text-center">
-                                                        <a href="item.html" class="btn btn-primary mt-sm-2">Go to item</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-4 col-sm">
+                        <div class="card">
+                           <a href="item.html">
+                              <img class="card-img-top img-prop img-thumbnail hoverable" src="watch/daniel_klein.jpg" alt="watchname">
+                              <div class="card-body">
+                                 <h4 class="card-title text-dark">Daniel Klein</h4>
+                                 <p class="card-text text-dark">Watch desc</p>
+                                 <div class="container">
+                                    <div class="row">
+                                       <div class="col-sm text-center">
+                           <a href="item.html" class="btn btn-primary mt-sm-2">Go to item</a>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </a>
                         </div>
-                        <div class="row newrow">
-                            <div class="col-lg-4 col-sm">
-                                <div class="card">
-                                    <a href="item.html">
-                                        <img class="card-img-top img-prop img-thumbnail hoverable" src="watch/analog1-1.webp" alt="watchname">
-                                        <div class="card-body">
-                                            <h4 class="card-title text-dark">Fossil</h4>
-                                            <p class="card-text text-dark">Watch desc</p>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col-sm text-center">
-                                                        <a href="item.html" class="btn btn-primary mt-sm-2">Go to item</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm">
-                                <div class="card">
-                                    <a href="item.html">
-                                        <img class="card-img-top img-prop img-thumbnail hoverable" src="watch/Dressberry.webp" alt="watchname">
-                                        <div class="card-body">
-                                            <h4 class="card-title text-dark">Dressberry</h4>
-                                            <p class="card-text text-dark">Watch desc</p>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col-sm text-center">
-                                                        <a href="item.html" class="btn btn-primary mt-sm-2">Go to item</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm">
-                                <div class="card">
-                                    <a href="item.html">
-                                        <img class="card-img-top img-prop img-thumbnail hoverable" src="watch/Mont-vitton.webp" alt="watchname">
-                                        <div class="card-body">
-                                            <h4 class="card-title text-dark">Mont Vitton</h4>
-                                            <p class="card-text text-dark">Watch desc</p>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col-sm text-center">
-                                                        <a href="item.html" class="btn btn-primary mt-sm-2">Go to item</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="col-lg-4 col-sm">
+                        <div class="card">
+                           <a href="item.html">
+                              <img class="card-img-top img-prop img-thumbnail hoverable" src="watch/Fossilstella.webp" alt="watchname">
+                              <div class="card-body">
+                                 <h4 class="card-title text-dark">Fossil</h4>
+                                 <p class="card-text text-dark">Watch desc</p>
+                                 <div class="container">
+                                    <div class="row">
+                                       <div class="col-sm text-center">
+                           <a href="item.html" class="btn btn-primary mt-sm-2">Go to item</a>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </a>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                     <div class="col-lg-4 col-sm">
+                        <div class="card">
+                           <a href="item.html">
+                              <img class="card-img-top img-prop img-thumbnail hoverable" src="watch/emporioarmani.webp" alt="watchname">
+                              <div class="card-body">
+                                 <h4 class="card-title text-dark">Emportio Armani</h4>
+                                 <p class="card-text text-dark">Watch desc</p>
+                                 <div class="container">
+                                    <div class="row">
+                                       <div class="col-sm text-center">
+                           <a href="item.html" class="btn btn-primary mt-sm-2">Go to item</a>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row newrow">
+                     <div class="col-lg-4 col-sm">
+                        <div class="card">
+                           <a href="item.html">
+                              <img class="card-img-top img-prop img-thumbnail hoverable" src="watch/analog1-1.webp" alt="watchname">
+                              <div class="card-body">
+                                 <h4 class="card-title text-dark">Fossil</h4>
+                                 <p class="card-text text-dark">Watch desc</p>
+                                 <div class="container">
+                                    <div class="row">
+                                       <div class="col-sm text-center">
+                           <a href="item.html" class="btn btn-primary mt-sm-2">Go to item</a>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm">
+                        <div class="card">
+                           <a href="item.html">
+                              <img class="card-img-top img-prop img-thumbnail hoverable" src="watch/Dressberry.webp" alt="watchname">
+                              <div class="card-body">
+                                 <h4 class="card-title text-dark">Dressberry</h4>
+                                 <p class="card-text text-dark">Watch desc</p>
+                                 <div class="container">
+                                    <div class="row">
+                                       <div class="col-sm text-center">
+                           <a href="item.html" class="btn btn-primary mt-sm-2">Go to item</a>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm">
+                        <div class="card">
+                           <a href="item.html">
+                              <img class="card-img-top img-prop img-thumbnail hoverable" src="watch/Mont-vitton.webp" alt="watchname">
+                              <div class="card-body">
+                                 <h4 class="card-title text-dark">Mont Vitton</h4>
+                                 <p class="card-text text-dark">Watch desc</p>
+                                 <div class="container">
+                                    <div class="row">
+                                       <div class="col-sm text-center">
+                           <a href="item.html" class="btn btn-primary mt-sm-2">Go to item</a>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-        <footer class="pg-footer bg-secondary">
-            <div class="bg-success">
-                <div class="container">
-                    <div class="row py-4 d-flex align-items-center">
-                        <div class="col md-25 text-center">
-                            <a href="#"><i class="fab fa-facebook text-white mr-4"></i></a>
-                            <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
-                            <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
-                            <a href="#"><i class="fab fa-whatsapp text-white mr-4"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </footer>
-    </body>
+         </div>
+      </div>
+      <footer class="pg-footer bg-secondary">
+         <div class="bg-success">
+            <div class="container">
+               <div class="row py-4 d-flex align-items-center">
+                  <div class="col md-25 text-center">
+                     <a href="#"><i class="fab fa-facebook text-white mr-4"></i></a>
+                     <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
+                     <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
+                     <a href="#"><i class="fab fa-whatsapp text-white mr-4"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>
