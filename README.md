@@ -1,7 +1,6 @@
 # eCommerce html-css
 
-View the hosted version [here](https://mywatchstorechris.herokuapp.com/){:target="\_blank"}
-
+View the hosted version <a href="https://mywatchstorechris.herokuapp.com/" target="_blank">here</a>
 ## Objective
 To build an E-Commerce web site with HTML-CSS and a CSS framework.
 
