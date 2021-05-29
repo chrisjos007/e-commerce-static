@@ -1,5 +1,7 @@
 # eCommerce html-css
 
+View the hosted version [here](https://mywatchstorechris.herokuapp.com/)
+
 ## Objective
 To build an E-Commerce web site with HTML-CSS and a CSS framework.
 
